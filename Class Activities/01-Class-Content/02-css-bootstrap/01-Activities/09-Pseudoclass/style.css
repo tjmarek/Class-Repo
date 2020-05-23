@@ -1,0 +1,29 @@
+a {
+    background-color: #010101;
+    display:block;
+    height:50px;
+    width:400px;
+    font-size:40px;
+    color:#ffffff;
+    text-align:center;
+}
+
+a:hover {
+    background-color:green;
+    color:red
+}
+
+a:focus {
+    background-color:orange;
+    color:blue
+}
+
+a:active {
+    background-color:red;
+    color:black
+}
+
+a:visited {
+    background-color:gold;
+    color:purple
+}

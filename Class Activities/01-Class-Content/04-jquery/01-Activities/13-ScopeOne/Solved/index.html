@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scope Activity #1</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <h1>Scope Activity #1</h1>
+  <h2>✨Open the console to see the magic!✨</h2>
+
+  <button id="clickme">Click me</button>
+  <script>
+
+
+    var someFunction = doThisAfter;
+
+
+    $("#clickme").on('click', function() {
+
+        buttonClick(someFunction);
+
+    });
+  
+
+  function buttonClick(param) {
+    param();
+    console.log("Congratulations on clicking a button, achievement unlocked.");
+  }
+
+  function doThisAfter() {
+    console.log("I am a good programmer");
+  }
+
+
+
+  </script>
+
+</body>
+</html>
